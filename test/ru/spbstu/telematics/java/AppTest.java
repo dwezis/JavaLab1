@@ -11,21 +11,21 @@ public class AppTest {
         // Тест для положительного числа 12
         List<Integer> expectedPositive = Arrays.asList(1, 2, 3, 4, 6, 12);
         List<Integer> actualPositive = App.findDivisors(12);
-        assertEquals("Делители числа 12 должны быть [1, 2, 3, 4, 6, 12]", expectedPositive, actualPositive);
+        assertEquals("The divisors of 12 must be [1, 2, 3, 4, 6, 12]", expectedPositive, actualPositive);
 
         // Тест для отрицательного числа -4
         List<Integer> expectedNegative = Arrays.asList(-4, -2, -1, 1, 2, 4);
         List<Integer> actualNegative = App.findDivisors(-4);
-        assertEquals("Делители числа -4 должны быть [-4, -2, -1, 1, 2, 4]", expectedNegative, actualNegative);
+        assertEquals("The divisors of the number -4 must be [-4, -2, -1, 1, 2, 4]", expectedNegative, actualNegative);
 
         // Тест для числа 1
         List<Integer> expectedOne = Arrays.asList(1);
         List<Integer> actualOne = App.findDivisors(1);
-        assertEquals("Делители числа 1 должны быть [1]", expectedOne, actualOne);
+        assertEquals("Divisors of the number 1 must be [1]", expectedOne, actualOne);
 
         // Тест для числа -1
         List<Integer> expectedMinusOne = Arrays.asList(-1, 1);
         List<Integer> actualMinusOne = App.findDivisors(-1);
-        assertEquals("Делители числа -1 должны быть [-1, 1]", expectedMinusOne, actualMinusOne);
+        assertEquals("Divisors of the number -1 must be [-1, 1]", expectedMinusOne, actualMinusOne);
     }
 }
